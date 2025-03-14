@@ -53,7 +53,7 @@ iframe#heads_up_dashboard {
     window.$memberstackDom.getCurrentMember().then(async ({ data: member }) => {
         if (member) {
             const userId = member.customFields["headsup-sso"];
-            const orgUuid = "a0f28c9b-78e1-4225-91c4-e6c450f3070e";
+            const orgUuid = "Headsup_ORG_ID"; //Replace with Organisation ID.
             const jwtToken = await fetchJWT();
 
             if (jwtToken) {
@@ -69,11 +69,11 @@ iframe#heads_up_dashboard {
 </script>
 ```
 
-## Netlify App Installation Guide (Git Repository)
+## Netlify App Installation Guide (Git Repository) - FOR LOCAL ENVIRONMENT SAME PROCESS FOR PRODUCTION
 ### 1. Clone the Repository
 ```sh
-git clone https://github.com/your-repo.git
-cd your-repo
+git clone https://github.com/rebel-health-alliance-techaccount/headsupsso.git
+cd headsupsso
 ```
 
 ### 2. Install Dependencies
